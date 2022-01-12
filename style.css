@@ -7,3 +7,7 @@
 header {
     display: flex;
 }
+
+.choices{
+    display: flex;
+}
