@@ -25,6 +25,10 @@ header{
     font-size: 1.2em;
     border-radius: 25px;
 }
+.btn-flex:hover{
+    cursor: pointer;
+    background-color: #000;
+}
 
 .choices{
     display: flex;
