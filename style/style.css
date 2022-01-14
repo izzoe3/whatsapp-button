@@ -28,4 +28,6 @@ header{
 
 .choices{
     display: flex;
+    background-color: black;
 }
+
