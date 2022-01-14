@@ -9,14 +9,19 @@
 </head>
 <body>
     <header>
+        <!-- change the text here if needed-->
         <h1 id="header-title">This is a test page</h1> 
+        
+        <!-- multiple buttons if you have multiple agent/staff. Remove extra buttons if not needed-->
         <div class="ws-buttons">
-            <button class="btn-flex" id ="ws-ita" >Ms. Marsita</button>
-            <button class="btn-flex"  id ="ws-thiru" >Mr. Thiru</button>
-            <button class="btn-flex" id ="ws-robert" >Mr. Robert Ooi</button>
+            <button class="btn-flex" id ="ws-ita" onclick="whatsApp()" >Ms. Marsita</button>
+            <button class="btn-flex"  id ="ws-thiru" onclick="whatsApp2()">Mr. Thiru</button>
+            <button class="btn-flex" id ="ws-robert" onclick="whatsApp3()">Mr. Robert Ooi</button>
         </div>
         
     </header>
+
+    <!-- OPTIONAL: You can add more option if needed. Remove this if you just want to get the page title and links to be included-->
     <section class="choices">
         <select class="drpdown" id="question" onchange= selectedSubjectName(this)>
             <option value="all info" >All</option>
