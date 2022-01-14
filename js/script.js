@@ -1,4 +1,4 @@
-var ita= document.getElementById("ws-ita");
+// var ita= document.getElementById("ws-ita");
 var thiru= document.getElementById("ws-thiru");
 var robert= document.getElementById("ws-robert");
 var pageInfo = encodeURIComponent(document.getElementById('header-title').textContent) + ' ' + encodeURIComponent(document.URL);
@@ -13,9 +13,9 @@ var chat = "?text=Hi%20I%20would%20like%20to%20enquire%20about%20your%20one%20of
  
 
 
-ita.onclick= function whatsApp(){
-    var whatsapp = window.open('https://wa.me/60123073646' +chat + selectedSubjectName(question) + ' ' + pageInfo) ;
- }
+// ita.onclick= function whatsApp(){
+//     var whatsapp = window.open('https://wa.me/60123073646' +chat + selectedSubjectName(question) + ' ' + pageInfo) ;
+//  }
   
 thiru.onclick= function whatsApp2(){
     var whatsapp2 = window.open('https://wa.me/60122646159' +chat + selectedSubjectName(question) + ' ' + pageInfo) ;
@@ -26,3 +26,14 @@ robert.onclick= function whatsApp3(){
         }
     
     
+
+
+function newWhatsapp(){
+    var x = document.getElementById("ws-ita");
+    if(x.id === "ws-ita"){
+       
+        var whatsapp = window.open('https://wa.me/60123073646' +chat + selectedSubjectName(question) + ' ' + pageInfo) ;
+    }
+}
+
+document.getElementById("ws-ita").addEventListener("click", newWhatsapp);

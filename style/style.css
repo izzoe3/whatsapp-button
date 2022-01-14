@@ -6,7 +6,7 @@
 
 header{
    text-align: center;
-   padding: 200px;
+   padding: 200px 200px 50px 200px;
 }
 .ws-buttons {
     padding-top: 100px;
@@ -32,6 +32,8 @@ header{
 
 .choices{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .drpdown{
